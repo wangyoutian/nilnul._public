@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC8E3247-1041-4982-9608-87F1CA79D175}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul</RootNamespace>
+    <AssemblyName>nilnul[bit</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bit\Absurdity.cs" />
+    <Compile Include="bit\AdjectiveI%28T%29.cs" />
+    <Compile Include="bit\Antonym.cs" />
+    <Compile Include="bit\Assert%28static.cs" />
+    <Compile Include="bit\Assert%28T%29.cs" />
+    <Compile Include="bit\AssertFuncNegative.cs" />
+    <Compile Include="bit\AssertX.cs" />
+    <Compile Include="bit\Axiom%28T.cs" />
+    <Compile Include="bit\Axiom.cs" />
+    <Compile Include="bit\collection\BitX.cs" />
+    <Compile Include="bit\Contingency.cs" />
+    <Compile Include="bit\ContingencyI.cs" />
+    <Compile Include="bit\ContradictionI.cs" />
+    <Compile Include="bit\op\binary\And.cs" />
+    <Compile Include="bit\op\binary\BinaryI.cs" />
+    <Compile Include="bit\op\binary\Diff.cs" />
+    <Compile Include="bit\op\binary\DiffX.cs" />
+    <Compile Include="bit\op\binary\Eq.cs" />
+    <Compile Include="bit\op\binary\Imply.cs" />
+    <Compile Include="bit\op\binary\ImplyX.cs" />
+    <Compile Include="bit\op\binary\Nand.cs" />
+    <Compile Include="bit\op\binary\Nor.cs" />
+    <Compile Include="bit\op\binary\NotImply.cs" />
+    <Compile Include="bit\op\binary\NotImplyX.cs" />
+    <Compile Include="bit\op\binary\Or.cs" />
+    <Compile Include="bit\op\binary\Xor.cs" />
+    <Compile Include="bit\op\unary\Not.cs" />
+    <Compile Include="bit\op\unary\UnaryI.cs" />
+    <Compile Include="bit\Possible.cs" />
+    <Compile Include="bit\Predicate%28Static.cs" />
+    <Compile Include="bit\Predicate%28T.cs" />
+    <Compile Include="bit\Predicate%28T1,T2.cs" />
+    <Compile Include="bit\PredicateI%28T.cs" />
+    <Compile Include="bit\PredicateI.cs" />
+    <Compile Include="bit\PredicateSingleton.cs" />
+    <Compile Include="bit\PredicateSingletonI%28T.cs" />
+    <Compile Include="bit\StaticAssert%28T.cs" />
+    <Compile Include="bit\TautologyI.cs" />
+    <Compile Include="bit\TypeWithPredicate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bit\op\binary\_\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bit\op\binary\binary.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

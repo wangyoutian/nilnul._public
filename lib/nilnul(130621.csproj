@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{781321C7-7737-4B1F-BA13-048169502805}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul</RootNamespace>
+    <AssemblyName>nilnul%28130621</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '_Temp|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\_Temp\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionX.cs" />
+    <Compile Include="Assert.cs" />
+    <Compile Include="Box%28TOriginal%29.cs" />
+    <Compile Include="Collection.cs" />
+    <Compile Include="CollectionTostrX.cs" />
+    <Compile Include="ConstI%28T%29.cs" />
+    <Compile Include="ConstI.cs" />
+    <Compile Include="ConstraintedType.cs" />
+    <Compile Include="FiniteI.cs" />
+    <Compile Include="InfiniteI.cs" />
+    <Compile Include="SingletonByDefaultNew2%28T%29.cs" />
+    <Compile Include="NotNullX.cs" />
+    <Compile Include="NotNull2.cs" />
+    <Compile Include="NotNull.cs" />
+    <Compile Include="RefNotNullStruct.cs" />
+    <Compile Include="SingletonByDefaultNew%28T%29.cs" />
+    <Compile Include="EachXForIEnumerableT.cs" />
+    <Compile Include="Element.cs" />
+    <Compile Include="ElementI.cs" />
+    <Compile Include="Equal.cs" />
+    <Compile Include="EqX.cs" />
+    <Compile Include="ExprI%28T%29.cs" />
+    <Compile Include="ExprI.cs" />
+    <Compile Include="Extended%28T%29.cs" />
+    <Compile Include="FuncAsEqualityComparer.cs" />
+    <Compile Include="FuncAsEqualityComparer2.cs" />
+    <Compile Include="HtmlSafe.cs" />
+    <Compile Include="Interface_.cs" />
+    <Compile Include="Literal%28T%29.cs" />
+    <Compile Include="LiteralExprI%28T%29.cs" />
+    <Compile Include="LiteralExprI.cs" />
+    <Compile Include="LiteralI%28T%29.cs" />
+    <Compile Include="LiteralI.cs" />
+    <Compile Include="LiteralI2_T_.cs" />
+    <Compile Include="NullaryTuple%28T.cs" />
+    <Compile Include="ObjectTostrX.cs" />
+    <Compile Include="Singleton.cs" />
+    <Compile Include="SingletonByDefault%28T%29.cs" />
+    <Compile Include="SingltonOfMember%28T.cs" />
+    <Compile Include="StrX.cs" />
+    <Compile Include="SwapX.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefI%28T.cs" />
+    <Compile Include="TostrX.cs" />
+    <Compile Include="ToStrX2.cs" />
+    <Compile Include="txt\Unicode.cs" />
+    <Compile Include="Type.cs" />
+    <Compile Include="type\ConstraintedType.cs" />
+    <Compile Include="type\Element.cs" />
+    <Compile Include="type\Interface_.cs" />
+    <Compile Include="type\Singleton.cs" />
+    <Compile Include="type\SingletonByDefault%28T%29.cs" />
+    <Compile Include="type\SingltonOfMember%28T.cs" />
+    <Compile Include="type\StaticCreate.cs" />
+    <Compile Include="type\Type.cs" />
+    <Compile Include="type\UnexpectedTypeException.cs" />
+    <Compile Include="type\UnknownTypeException.cs" />
+    <Compile Include="type\ValidationResultI.cs" />
+    <Compile Include="UnexpectedTypeException.cs" />
+    <Compile Include="UnknownTypeException.cs" />
+    <Compile Include="ValI%28T%29.cs" />
+    <Compile Include="ValidationResultI.cs" />
+    <Compile Include="Var%28T%29.cs" />
+    <Compile Include="VarExprI%28T%29.cs" />
+    <Compile Include="VarExprI.cs" />
+    <Compile Include="VarI%28T%29.cs" />
+    <Compile Include="VarI.cs" />
+    <Compile Include="var\Naming.cs" />
+    <Compile Include="X.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="expr.cd" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

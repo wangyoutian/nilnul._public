@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{523E098A-D8C7-419A-AD62-1718E6198488}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul</RootNamespace>
+    <AssemblyName>nilnul[collection</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="set\adjectives\decorated\FiniteSet.cs" />
+    <Compile Include="set\adjectives\decorated\SingletonSet.cs" />
+    <Compile Include="set\adjectives\Empty.cs" />
+    <Compile Include="set\adjectives\EmptyAssert.cs" />
+    <Compile Include="set\adjectives\EmptyX.cs" />
+    <Compile Include="set\adjectives\Finite.cs" />
+    <Compile Include="set\adjectives\Singleton.cs" />
+    <Compile Include="set\Cardinal.cs" />
+    <Compile Include="set\ClassOfSets.cs" />
+    <Compile Include="set\Combinate.cs" />
+    <Compile Include="set\EmptySet%28T.cs" />
+    <Compile Include="set\EmptySet.cs" />
+    <Compile Include="set\EmptySetI %2812%29.cs" />
+    <Compile Include="set\EqualityComparer.cs" />
+    <Compile Include="set\EqualsX.cs" />
+    <Compile Include="set\Field.cs" />
+    <Compile Include="set\HashSet%28T,IEqualityCompaer%29.cs" />
+    <Compile Include="set\InductiveI.cs" />
+    <Compile Include="set\InfinityI.cs" />
+    <Compile Include="set\IsHashSet.cs" />
+    <Compile Include="set\Literal.cs" />
+    <Compile Include="set\op\BinaryI.cs" />
+    <Compile Include="set\op\Diff.cs" />
+    <Compile Include="set\op\expr\Binary.cs" />
+    <Compile Include="set\op\expr\BinaryI.cs" />
+    <Compile Include="set\op\expr\Union%28T.cs" />
+    <Compile Include="set\op\expr\Union2%28T,Eq .cs" />
+    <Compile Include="set\op\expr\Union2%28T.cs" />
+    <Compile Include="set\op\Intersect.cs" />
+    <Compile Include="set\op\SuccessorX.cs" />
+    <Compile Include="set\op\Union.cs" />
+    <Compile Include="set\op\Xor.cs" />
+    <Compile Include="set\Partition.cs" />
+    <Compile Include="set\PowerSetX.cs" />
+    <Compile Include="set\Recursive.cs" />
+    <Compile Include="set\rel\Disjoint.cs" />
+    <Compile Include="set\rel\Joint.cs" />
+    <Compile Include="set\rel\Subset.cs" />
+    <Compile Include="set\Set%28T.cs" />
+    <Compile Include="set\Set.cs" />
+    <Compile Include="set\SetByPredicate%28T.cs" />
+    <Compile Include="set\SetI%28T.cs" />
+    <Compile Include="set\SetI.cs" />
+    <Compile Include="set\SigmaAlgebra %2821%29.cs" />
+    <None Include="set\TostrX.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
